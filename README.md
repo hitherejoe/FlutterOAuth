@@ -25,27 +25,27 @@ in other optional parameters for:
 - contentType - This allows you to change the content type for the request. Fr example, for Spotify
 API authorization you need to use "application/x-www-form-urlencoded"
 
-    final OAuth flutterOAuth = new FlutterOAuth(new Config(
-        ...,
-        contentType: "application/x-www-form-urlencoded"));
+        final OAuth flutterOAuth = new FlutterOAuth(new Config(
+            ...,
+            contentType: "application/x-www-form-urlencoded"));
 
 - parameters - Add your own parameters that this library may not support out-of-the-box. For example,
 with the github API you can send a state string and scopes to gain authorization for
 
-    Map<String, String> customParameters = {"state": "SOME_RANDOM_SECURE_STRING", "scope": "public_repo"};
+        Map<String, String> customParameters = {"state": "SOME_RANDOM_SECURE_STRING", "scope": "public_repo"};
 
-    final OAuth flutterOAuth = new FlutterOAuth(new Config(
-        ...,
-        parameters: customParameters));
+        final OAuth flutterOAuth = new FlutterOAuth(new Config(
+            ...,
+            parameters: customParameters));
 
 - headers - Some APIs require you to send custom headers, such as an Authorization Header. Use this
 parameter if you require this
 
-    Map<String, String> headers = {"Authorization": "Basic SOME_BASE_64_STRING"};
+        Map<String, String> headers = {"Authorization": "Basic SOME_BASE_64_STRING"};
 
-    final OAuth flutterOAuth = new FlutterOAuth(new Config(
-        ...,
-        headers: headers));
+        final OAuth flutterOAuth = new FlutterOAuth(new Config(
+            ...,
+            headers: headers));
 
 Then once you have an OAuth instance, you can simply call the performAuthorization() method like so to retrieve a Token instance:
 
