@@ -1,0 +1,4 @@
+#Fri Dec 08 12:40:24 GMT 2017
+base.0=/Users/joebirch/Dev/flutter_oauth/example/build/app/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/joebirch/Dev/flutter_oauth/example/build/app/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
