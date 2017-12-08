@@ -51,7 +51,14 @@ Then once you have an OAuth instance, you can simply call the performAuthorizati
 
     Token token = await flutterOauth.performAuthorization();
     String accessToken = token.accessToken;
+    
+    
+## Installing
 
+Add the following you your pubspec.yaml dependancies:
+
+    dependencies:
+      flutter_oauth: "^0.0.1"
 
 ## Thanks to
 
