@@ -34,6 +34,15 @@ class FlutterOAuth extends OAuth {
         close();
       });
 
+      // this is another way to listen the request url.
+      webView.onUrlChanged.listen((url){
+        var uri = Uri.parse(url);
+        var code = uri.queryParameters["code"];
+        if(code != null && code.trim().length > 0){
+          onCodeListener.add(code);
+        }
+      });
+
       webView.launch("${requestDetails.url}?$urlParams",
           clearCookies: requestDetails.clearCookies,
           fullScreen: requestDetails.fullScreen);

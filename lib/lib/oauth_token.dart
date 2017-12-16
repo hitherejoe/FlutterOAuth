@@ -15,6 +15,12 @@ class TokenRequestDetails {
       "redirect_uri": configuration.redirectUri,
       "grant_type": "authorization_code"
     };
+
+    //some api like weibo need this.
+    final queryParams = <String>[];
+    this.params.forEach((key,value)=>queryParams.add("$key=$value"));
+    this.url += "?" + queryParams.join("&");
+
     this.headers = {
       "Accept": "application/json",
       "Content-Type": configuration.contentType
