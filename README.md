@@ -75,8 +75,8 @@ dependencies:
 
 [Kevin Seqaud](https://medium.com/@segaud.kevin/facebook-oauth-login-flow-with-flutter-9adb717c9f2e) for his awesome blog post on Flutter OAuth https://medium.com/@segaud.kevin/facebook-oauth-login-flow-with-flutter-9adb717c9f2e
 
-THe auther, [Hadrien Lejard](https://twitter.com/hadrienlejard), behind the:
+The author, [Hadrien Lejard](https://twitter.com/hadrienlejard), behind the:
 
-The Gitter-Dart repo, where a lot of this library was influenced from https://github.com/dart-flitter/gitter_dart
+The [Gitter-Dart repo](https://github.com/dart-flitter/gitter_dart), where a lot of this library was influenced
 
-and the Flutter Webview plugin which this library uses https://github.com/dart-flitter/flutter_webview_plugin
+and the [Flutter Webview plugin](https://github.com/dart-flitter/flutter_webview_plugin), which this library uses
