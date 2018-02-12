@@ -1,8 +1,8 @@
 # Flutter OAuth
 
-A flutter oauth package for performing user authentication for your apps.
+A Flutter OAuth package for performing user authentication for your apps.
 
-I've tested this with a small collection of APIs (Buffer, Strava, Unsplash and Github). If there
+I've tested this with a small collection of APIs (Buffer, Strava, Unsplash and GitHub). If there
 is an issue with an API you are trying to work with, please file an issue :)
 
 ## Authorizing an application
@@ -24,7 +24,7 @@ This allows you to pass in an Authorization URL, Token request URL, Client ID, C
 Redirect URL and the response type. This should satisfy most requests, but if not then you can pass
 in other optional parameters for:
 
-- contentType - This allows you to change the content type for the request. Fr example, for Spotify
+- __contentType__ - This allows you to change the content type for the request. For example, for Spotify
 API authorization you need to use "application/x-www-form-urlencoded"
 
 ```dart
@@ -33,8 +33,8 @@ final OAuth flutterOAuth = new FlutterOAuth(new Config(
     contentType: "application/x-www-form-urlencoded"));
 ```
 
-- parameters - Add your own parameters that this library may not support out-of-the-box. For example,
-with the github API you can send a state string and scopes to gain authorization for
+- __parameters__ - Add your own parameters that this library may not support out-of-the-box. For example,
+with the GitHub API you can send a state string and scopes to gain authorization for
 
 ```dart
 Map<String, String> customParameters = {"state": "SOME_RANDOM_SECURE_STRING", "scope": "public_repo"};
@@ -44,7 +44,7 @@ final OAuth flutterOAuth = new FlutterOAuth(new Config(
     parameters: customParameters));
 ```
 
-- headers - Some APIs require you to send custom headers, such as an Authorization Header. Use this
+- __headers__ - Some APIs require you to send custom headers, such as an Authorization Header. Use this
 parameter if you require this
 
 ```dart
@@ -55,7 +55,7 @@ final OAuth flutterOAuth = new FlutterOAuth(new Config(
     headers: headers));
 ```
 
-Then once you have an OAuth instance, you can simply call the performAuthorization() method like so to retrieve a Token instance:
+Then once you have an OAuth instance, you can simply call the `performAuthorization()` method like so to retrieve a Token instance:
 
 ```dart
 Token token = await flutterOauth.performAuthorization();
