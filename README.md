@@ -58,7 +58,7 @@ final OAuth flutterOAuth = new FlutterOAuth(new Config(
 Then once you have an OAuth instance, you can simply call the `performAuthorization()` method like so to retrieve a Token instance:
 
 ```dart
-Token token = await flutterOauth.performAuthorization();
+Token token = await flutterOAuth.performAuthorization();
 String accessToken = token.accessToken;
 ```
     
